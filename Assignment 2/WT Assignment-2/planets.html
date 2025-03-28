@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets - Galaxy Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="app-container">
+        <div class="learning-screen">
+            <div class="planet-slide active" id="planet-1">
+                <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('planets.jpg');">
+                    <div class="content">
+                        <div class="page-header with-back">
+                            <a href="explore.html" class="back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </a>
+                            <h1>Learning About</h1>
+                        </div>
+                        
+                        <div class="learning-content">
+                            <h2>Earth</h2>
+                            <p>Our home planet is the only place we know of so far that's inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</p>
+                            
+                            <div class="pagination">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="nextPlanet(1)">
+                                Next Planet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="planet-slide" id="planet-2">
+                <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('mars.jpg');">
+                    <div class="content">
+                        <div class="page-header with-back">
+                            <a href="explore.html" class="back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </a>
+                            <h1>Learning About</h1>
+                        </div>
+                        
+                        <div class="learning-content">
+                            <h2>Mars</h2>
+                            <p>Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere.</p>
+                            
+                            <div class="pagination">
+                                <div class="dot"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="nextPlanet(2)">
+                                Next Planet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="planet-slide" id="planet-3">
+                <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('jupiter.webp');">
+                    <div class="content">
+                        <div class="page-header with-back">
+                            <a href="explore.html" class="back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </a>
+                            <h1>Learning About</h1>
+                        </div>
+                        
+                        <div class="learning-content">
+                            <h2>Jupiter</h2>
+                            <p>Jupiter is the largest planet in our solar system at nearly 11 times the size of Earth and 317 times its mass. Jupiter, being the biggest planet, gets its name from the king of the ancient Roman gods.</p>
+                            
+                            <div class="pagination">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot active"></div>
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="nextPlanet(3)">
+                                Next Planet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

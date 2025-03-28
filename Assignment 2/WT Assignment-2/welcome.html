@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Galaxy Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="app-container">
+        <div class="welcome-screen active" id="welcome-1">
+            <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('image1\ \(8\).png');">
+                <div class="content">
+                    <div class="header">
+                        <h1>Welcome</h1>
+                        <p>Let's get to know you better. What should we call you?</p>
+                        
+                        <div class="input-group">
+                            <input type="text" id="username" placeholder="Enter your name" class="text-input">
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="pagination">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <button class="btn btn-primary" id="continue-btn" disabled>
+                            Continue
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-screen" id="welcome-2">
+            <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('image1\ \(7\).png');">
+                <div class="content">
+                    <div class="header">
+                        <h1>Welcome</h1>
+                        <p>Great! We're excited to have you join our cosmic journey.</p>
+                        
+                        <div class="welcome-message">
+                            <p class="greeting">Hello, <span id="user-greeting" class="highlight">Astronaut</span>!</p>
+                            <p class="subtext">Get ready to explore the wonders of the universe with Galaxy Explorer.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="pagination">
+                            <div class="dot"></div>
+                            <div class="dot active"></div>
+                        </div>
+                        <a href="explore.html" class="btn btn-primary">
+                            Start Exploring
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

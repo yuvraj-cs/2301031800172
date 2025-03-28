@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellites - Galaxy Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="app-container">
+        <div class="learning-screen">
+            <div class="satellite-slide active" id="satellite-1">
+                <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('placeholder.jpg');">
+                    <div class="content">
+                        <div class="page-header with-back">
+                            <a href="explore.html" class="back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </a>
+                            <h1>Learning About</h1>
+                        </div>
+                        
+                        <div class="learning-content">
+                            <h2>Satellites</h2>
+                            <p>Satellites are objects that orbit around planets. They can be natural, like moons, or artificial, like the International Space Station. They serve various purposes from communications to weather monitoring.</p>
+                            
+                            <div class="pagination">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="nextSatellite(1)">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="satellite-slide" id="satellite-2">
+                <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('placeholder.jpg');">
+                    <div class="content">
+                        <div class="page-header with-back">
+                            <a href="explore.html" class="back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </a>
+                            <h1>Learning About</h1>
+                        </div>
+                        
+                        <div class="learning-content">
+                            <h2>The Moon</h2>
+                            <p>Earth's only natural satellite is the Moon, which is about a quarter of Earth's diameter and is the largest natural satellite in the Solar System relative to the size of its planet.</p>
+                            
+                            <div class="pagination">
+                                <div class="dot"></div>
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="nextSatellite(2)">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="satellite-slide" id="satellite-3">
+                <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('placeholder.jpg');">
+                    <div class="content">
+                        <div class="page-header with-back">
+                            <a href="explore.html" class="back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/>  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </a>
+                            <h1>Learning About</h1>
+                        </div>
+                        
+                        <div class="learning-content">
+                            <h2>ISS</h2>
+                            <p>The International Space Station is a modular space station in low Earth orbit. It's a multinational collaborative project involving NASA, Roscosmos, JAXA, ESA, and CSA.</p>
+                            
+                            <div class="pagination">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot active"></div>
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="nextSatellite(3)">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

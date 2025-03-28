@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Galaxy Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('stars.jpeg');">
+    <div class="app-container">
+        <div class="profile-screen">
+            <div class="page-header with-back">
+                <a href="explore.html" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </a>
+                <h1>Profile</h1>
+            </div>
+            
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <div class="avatar">A</div>
+                    <button class="edit-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>
+                    </button>
+                </div>
+                <h2 class="profile-name">Astronaut</h2>
+                <p class="profile-title">Space Explorer</p>
+            </div>
+            
+            <div class="profile-content">
+                <div class="glass-card">
+                    <h3>Achievements</h3>
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <div class="achievement-status completed"></div>
+                            <div class="achievement-info">
+                                <h4>Stargazer</h4>
+                                <p>Explored 10 celestial objects</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-status completed"></div>
+                            <div class="achievement-info">
+                                <h4>Astronomer</h4>
+                                <p>Completed all planet lessons</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-status"></div>
+                            <div class="achievement-info">
+                                <h4>Voyager</h4>
+                                <p>Used the app for 7 consecutive days</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-status"></div>
+                            <div class="achievement-info">
+                                <h4>Scientist</h4>
+                                <p>Answered 20 quiz questions correctly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card">
+                    <h3>Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <p class="stat-value">42</p>
+                            <p class="stat-label">Objects Explored</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">15</p>
+                            <p class="stat-label">Days Active</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">8</p>
+                            <p class="stat-label">Quizzes Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">3</p>
+                            <p class="stat-label">Badges Earned</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+                    Sign Out
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

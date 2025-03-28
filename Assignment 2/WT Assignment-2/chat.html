@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Galaxy Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="app-container">
+    <div class="cosmic-bg" style="background-image: linear-gradient(to bottom, rgba(250, 248, 248, 0), rgba(255, 253, 253, 0)), url('image1\ \(2\).png');"> 
+        <div class="chat-screen">
+            <div class="chat-header">
+                <a href="explore.html" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </a>
+                <h1>Galaxy AI</h1>
+            </div>
+            
+            <div class="chat-messages" id="chat-container">
+                <div class="message ai">
+                    <div class="message-content">
+                        <p>Hello! I'm your Galaxy Explorer assistant. What would you like to know about space today?</p>
+                        <span class="message-time">10:30 AM</span>
+                    </div>
+                </div>
+                <!-- More messages will be added dynamically -->
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Ask about the universe..." class="text-input">
+                <button id="send-btn" class="send-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
